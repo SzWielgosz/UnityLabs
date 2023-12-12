@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class TeleportController : MonoBehaviour
 {
-    public GameObject spawn;
+    public GameObject SpawnPoint;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.position = spawn.transform.position;
+            other.gameObject.transform.position = SpawnPoint.transform.position;
         }
     }
 }

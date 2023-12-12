@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class EnemyHit : MonoBehaviour
 {
-    public GameObject spawn;
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.position = spawn.transform.position;
+            other.gameObject.transform.position = GameManager.Instance.spawnPoint.transform.position;
             Rigidbody playerRigidbody = other.gameObject.GetComponent<Rigidbody>();
             if (playerRigidbody != null)
             {
