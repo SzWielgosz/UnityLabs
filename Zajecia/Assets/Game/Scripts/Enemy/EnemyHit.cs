@@ -8,11 +8,9 @@ public class EnemyHit : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            other.gameObject.transform.position = GameManager.Instance.spawnPoint.transform.position;
-            Rigidbody playerRigidbody = other.gameObject.GetComponent<Rigidbody>();
-            if (playerRigidbody != null)
+            if(GameManager.Instance != null)
             {
-                playerRigidbody.velocity = Vector3.zero;
+                GameManager.Instance.TeleportToSpawnPointAndStop(other.gameObject);
             }
         }
     }

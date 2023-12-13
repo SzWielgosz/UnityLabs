@@ -1066,14 +1066,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Use the arrow keys or wsad or the on-screen joystick to control the movement
-    of the ball.\r\n\nGuide the ball to the crown located in the last level. Upon
-    reaching the crown, the game ends.\n\r\nAfter reaching the crown, a timer will
-    stop, displaying the time taken to reach the goal.\r\n\r\nContinue through multiple
-    levels, each with increasing difficulty.\r\n\r\nAim to complete each level in
-    the shortest time possible. Challenge yourself to beat your previous records.\r\n\r\nExit
-    the game by closing the Unity Player or pressing Escape key and then pressing
-    quit button\n\nENJOY THE GAME :)\n\r"
+  m_text: "Use the arrow keys or wsad to control the movement of the ball.\r\n\nGuide
+    the ball to the crown located in the last level. Upon reaching the crown, the
+    game ends.\n\r\nAfter reaching the crown, a timer will stop, displaying the time
+    taken to reach the goal.\r\n\nCollect the coins to open the door and get to another
+    level\n\r\nExit the game by closing the Unity Player or pressing Escape key and
+    then pressing quit button\n\nENJOY THE GAME :)\n\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1827,7 +1825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

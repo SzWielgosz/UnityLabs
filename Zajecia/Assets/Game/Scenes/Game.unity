@@ -5654,7 +5654,6 @@ GameObject:
   m_Component:
   - component: {fileID: 259771459}
   - component: {fileID: 259771458}
-  - component: {fileID: 259771460}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -5698,18 +5697,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &259771460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259771457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 074d551301d813144aafa4ed8e027b59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &272426026 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2339510313419057847, guid: 7b2a7958677ea02469bff8c232ca80da, type: 3}
@@ -6006,7 +5993,7 @@ GameObject:
   - component: {fileID: 322328355}
   - component: {fileID: 322328354}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: QuitMainMenuButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6076,9 +6063,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 259771460}
-        m_TargetAssemblyTypeName: Exit, Assembly-CSharp
-        m_MethodName: Quit
+      - m_Target: {fileID: 952199642}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitToMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12141,8 +12128,9 @@ GameObject:
   - component: {fileID: 952199639}
   - component: {fileID: 952199641}
   - component: {fileID: 952199640}
+  - component: {fileID: 952199642}
   m_Layer: 5
-  m_Name: QuitPanel
+  m_Name: OptionsPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12207,6 +12195,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952199638}
   m_CullTransparentMesh: 1
+--- !u!114 &952199642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952199638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ebab72187041347babb5894a085937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &959496900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14060,7 +14060,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Quit
+  m_text: Main menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -18400,7 +18400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -28000,7 +28000,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 139042373418974421, guid: 5cc7f5c126b88ce48a0b1f47dca616fc, type: 3}
       propertyPath: speed
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2053972589415604511, guid: 5cc7f5c126b88ce48a0b1f47dca616fc, type: 3}
       propertyPath: m_Name
@@ -28066,12 +28066,12 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 8722317727700456175}
+  - {fileID: 259771459}
   - {fileID: 1439368656}
   - {fileID: 2083071286}
   - {fileID: 1732838089}
   - {fileID: 793147447}
   - {fileID: 166566621}
-  - {fileID: 259771459}
   - {fileID: 1654970101}
   - {fileID: 1470335720}
   - {fileID: 1635105046}

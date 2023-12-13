@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed = 5.0f;
     private Rigidbody rb;
 
     private void Start()
@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if(Input.GetAxis("Horizontal") > 0)
         {

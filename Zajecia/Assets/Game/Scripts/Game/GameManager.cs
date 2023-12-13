@@ -103,6 +103,7 @@ public class GameManager : MonoBehaviour
             Transform playerTransform = player.GetComponent<Transform>();
             Vector3 newPosition = new Vector3(playerTransform.transform.position.x + 2, playerTransform.transform.position.y, playerTransform.transform.position.z);
             Instantiate(endCrown, newPosition, Quaternion.identity);
+            isCheatActivated = true;
         }
     }
 }
